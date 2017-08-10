@@ -1,6 +1,7 @@
 """AbstractTwitterBot.py
 Class definition for twitter bot
 """
+import tweepy
 
 
 class AbstractTwitterBot:
