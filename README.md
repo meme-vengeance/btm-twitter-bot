@@ -13,7 +13,7 @@ A customizable twitter bot used to spam btm with text and memes
 ---
 1) Clone the repository  
    ```bash
-   git clone https://propheticpepe@bitbucket.org/propheticpepe/btm-twitter-bot.git
+   git clone https://github.com/meme-vengeance/btm-twitter-bot.git
    ```
 
 2) Setup twitter credentials in `main.py`  
