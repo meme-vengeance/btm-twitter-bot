@@ -1,4 +1,3 @@
-
 import time
 import tweepy
 from TextSpamBot import TextSpamBot
@@ -37,12 +36,16 @@ def new_api(credentials):
 
 
 if __name__ == '__main__':
-    # Make bot
+    # Read list of credentials from text file
     all_creds = read_credentials('credentials.txt')
+    # Get first credentials
     current_cred = all_creds[0]
+    # Initiate twitter api for this account
     api = new_api(current_cred)
+    # Start a text spam bot
     spam_bot = TextSpamBot(twitter_api=api, text_file='lines.txt')
     spam_bot.start()
+    # Spam text every 60 seconds
     while True:
         spam_bot.loop()
         time.sleep(60)
