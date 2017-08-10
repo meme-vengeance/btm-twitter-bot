@@ -37,9 +37,9 @@ def new_api(credentials):
 
 if __name__ == '__main__':
     # Read list of credentials from text file
-    all_creds = read_credentials('credentials.txt')
+    all_credentials = read_credentials('credentials.txt')
     # Get first credentials
-    current_cred = all_creds[0]
+    current_cred = all_credentials[0]
     # Initiate twitter api for this account
     api = new_api(current_cred)
     # Start a text spam bot
