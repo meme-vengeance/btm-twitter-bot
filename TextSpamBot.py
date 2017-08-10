@@ -19,6 +19,9 @@ class TextSpamBot(AbstractTwitterBot):
         super(TextSpamBot, self).__init__(twitter_api=twitter_api)
 
     def _loop(self):
+        """Update status to the line of text at the current position in
+        self.lines
+        """
         if self.pos >= len(self.lines):
             self.pos = 0
         this_line = self.lines[self.pos].strip()
